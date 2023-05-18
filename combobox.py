@@ -8,3 +8,6 @@ def  onSelect(event):
     selected_item = event.widget.get()
     print("Selected item:", selected_item)
 
+# Creates a root window and set title 
+rootWindow = tk.Tk()
+rootWindow.title("Button Example")
