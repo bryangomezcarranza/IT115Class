@@ -12,15 +12,15 @@ def onSelect(event):
 rootWindow = tk.Tk()
 rootWindow.title("Button Example")
 
-#
+# Create an Array of items
 items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"]
 
-# 
+# Add items into the combobox 
 combo_box = ttk.Combobox(rootWindow, values=items)
 
-#
+# Bind selected event to the function 
 combo_box.bind("<<ComboboxSelected>>", onSelect)
-
 combo_box.pack()
 
+# Runs main event loop for tk 
 rootWindow.mainloop()
